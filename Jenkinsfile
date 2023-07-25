@@ -1,9 +1,9 @@
 	node{
-    stage('Git Checkout'){
+    stage('SCM Checkout'){
 		git 'https://github.com/sumitgos/ToolBoxProject/new/master'
 		}
 	
-	stage('Complie-Package){
-		sh 'mvn clean package'
+	stage('Compile-Package'){
+		sh 'mvn package'
 	}
 }
