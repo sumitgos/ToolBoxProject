@@ -1,6 +1,7 @@
 	node{
     stage('SCM Checkout'){
-		git 'https://github.com/sumitgos/ToolBoxProject/new/master'
+	    tool name: 'MAVEN_HOME', type: 'maven'
+		git 'https://github.com/sumitgos/ToolBoxProject'
 		}
 	
 	stage('Compile-Package'){
